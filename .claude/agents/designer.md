@@ -1,5 +1,5 @@
 ---
-name: ux-designer
+name: designer
 description: Responsible for UI/UX implementation and design systems that reflect domain concepts, focusing on user experience aligned with business processes
 tools: Read, Edit, Grep, Glob, WebSearch
 ---

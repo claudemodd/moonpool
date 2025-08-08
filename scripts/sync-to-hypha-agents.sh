@@ -75,19 +75,18 @@ for moonpool_agent in "$MOONPOOL_AGENTS"/*.md; do
     # Map Moonpool agent names to hypha-agents names
     hypha_name=""
     case "$agent_name" in
-        "platform-architect.md") hypha_name="platform_architect.md" ;;
-        "documentation-guardian.md") hypha_name="documentation_agent.md" ;;
-        "security-reviewer.md") hypha_name="security_agent.md" ;;
-        "market-researcher.md") hypha_name="market_researcher.md" ;;
-        "product-strategist.md") hypha_name="product_strategy_agent.md" ;;
+        "architect.md") hypha_name="platform_architect.md" ;;
+        "documentation.md") hypha_name="documentation_agent.md" ;;
+        "security.md") hypha_name="security_agent.md" ;;
+        "researcher.md") hypha_name="market_researcher.md" ;;
+        "strategist.md") hypha_name="product_strategy_agent.md" ;;
         "code-reviewer.md") hypha_name="code_reviewer.md" ;;
-        "automation-engineer.md") hypha_name="automation_agent.md" ;;
-        "backend-developer.md") hypha_name="backend_developer.md" ;;
-        "frontend-developer.md") hypha_name="frontend_developer.md" ;;
-        "task-orchestrator.md") hypha_name="main_orchestrator.md" ;;
-        "ux-designer.md") hypha_name="product_design_agent.md" ;;
-        "test-engineer.md") hypha_name="tester.md" ;;
-        "integration-specialist.md") hypha_name="integration_agent.md" ;;
+        "backend.md") hypha_name="backend_developer.md" ;;
+        "frontend.md") hypha_name="frontend_developer.md" ;;
+        "orchestrator.md") hypha_name="main_orchestrator.md" ;;
+        "designer.md") hypha_name="product_design_agent.md" ;;
+        "tester.md") hypha_name="tester.md" ;;
+        "integrator.md") hypha_name="integration_agent.md" ;;
         *) 
             echo "  → Unknown agent, skipping"
             continue

@@ -7,9 +7,9 @@
 ### Discovery Phase: Complete Freedom Zone
 
 **Primary Agents (Full Freedom):**
-- **market-researcher** - Unrestricted market analysis using any frameworks
-- **product-strategist** - Business model exploration without domain constraints  
-- **ux-designer** - User experience research and design ideation
+- **researcher** - Unrestricted market analysis using any frameworks
+- **strategist** - Business model exploration without domain constraints  
+- **designer** - User experience research and design ideation
 
 **Agent Responsibilities:**
 - Use any terminology, frameworks, or methodologies
@@ -18,22 +18,22 @@
 - Document insights in whatever format serves understanding best
 
 **Constrained Agents (Limited Involvement):**
-- **platform-architect** - Only consulted for feasibility questions, NO architectural enforcement
-- **documentation-guardian** - NO ubiquitous language enforcement during discovery
-- **security-reviewer** - Only high-level security consideration input, NO compliance enforcement
+- **architect** - Only consulted for feasibility questions, NO architectural enforcement
+- **documentation** - NO ubiquitous language enforcement during discovery
+- **security** - Only high-level security consideration input, NO compliance enforcement
 
 ### Validation Phase: Translation and Review Gateway
 
 **Primary Agents (Active Enforcement):**
-- **documentation-guardian** - Creates domain terminology from discovery findings
-- **platform-architect** - Reviews architectural feasibility and bounded context proposals
-- **security-reviewer** - Performs comprehensive security assessment
-- **task-orchestrator** - Manages discovery-to-domain translation process
+- **documentation** - Creates domain terminology from discovery findings
+- **architect** - Reviews architectural feasibility and bounded context proposals
+- **security** - Performs comprehensive security assessment
+- **orchestrator** - Manages discovery-to-domain translation process
 
 **Secondary Agents (Review and Input):**
-- **market-researcher** - Validates business assumptions in domain context
-- **product-strategist** - Confirms business model alignment with domain boundaries
-- **ux-designer** - Reviews user experience against domain model
+- **researcher** - Validates business assumptions in domain context
+- **strategist** - Confirms business model alignment with domain boundaries
+- **designer** - Reviews user experience against domain model
 
 **Translation Process:**
 1. Discovery findings collected and cataloged
@@ -45,10 +45,13 @@
 ### Domain Phase: Full DDD Enforcement
 
 **Primary Agents (Strict Enforcement):**
-- **platform-architect** - Full hexagonal architecture compliance required
-- **documentation-guardian** - Strict ubiquitous language enforcement
-- **backend-developer** - Domain model implementation with DDD patterns
-- **frontend-developer** - UI implementation reflecting domain concepts
+- **architect** - Full hexagonal architecture compliance required
+- **documentation** - Strict ubiquitous language enforcement
+- **backend** - Domain model implementation with DDD patterns
+- **integrator** - Adapter implementation following port/adapter pattern
+- **frontend** - UI implementation reflecting domain concepts
+- **tester** - Comprehensive testing strategy and implementation
+- **code-reviewer** - Code quality and architectural compliance verification
 
 **All Agents:** Domain phase requires all agents to follow established domain rules and terminology.
 
@@ -56,7 +59,7 @@
 
 ### Discovery Phase Agent Behavior
 
-**market-researcher:**
+**researcher:**
 ```
 ✅ DO: Use industry-standard terminology
 ✅ DO: Apply any market research frameworks
@@ -66,7 +69,7 @@
 ❌ DON'T: Constrain research to "domain-appropriate" topics
 ```
 
-**product-strategist:**
+**strategist:**
 ```
 ✅ DO: Explore multiple business models
 ✅ DO: Use standard product terminology
@@ -76,7 +79,7 @@
 ❌ DON'T: Constrain feature thinking to architectural patterns
 ```
 
-**ux-designer:**
+**designer:**
 ```
 ✅ DO: Focus on user needs and workflows
 ✅ DO: Use standard UX terminology and methods
@@ -88,7 +91,7 @@
 
 ### Validation Phase Agent Behavior
 
-**documentation-guardian:**
+**documentation:**
 ```
 ✅ DO: Translate discovery terms to domain concepts
 ✅ DO: Create ubiquitous language from business insights
@@ -98,7 +101,7 @@
 ❌ DON'T: Enforce domain language retroactively on discovery
 ```
 
-**platform-architect:**
+**architect:**
 ```
 ✅ DO: Review bounded context proposals for cohesion
 ✅ DO: Assess technical feasibility of discovery insights
@@ -125,32 +128,33 @@
 ### Discovery Phase Usage
 ```bash
 # Encouraged
-"Have the market-researcher analyze the competitive landscape"
-"Ask the product-strategist to explore revenue models"  
-"Use the ux-designer to map user journeys"
+"Have the researcher analyze the competitive landscape"
+"Ask the strategist to explore revenue models"  
+"Use the designer to map user journeys"
 
 # Discouraged
-"Have the platform-architect review this user story" (too early)
-"Ask the documentation-guardian to create domain terms" (premature)
+"Have the architect review this user story" (too early)
+"Ask the documentation to create domain terms" (premature)
 ```
 
 ### Validation Phase Usage
 ```bash
 # Required
-"Use the task-orchestrator to manage discovery-to-domain translation"
-"Have the documentation-guardian create domain terminology"
-"Ask the platform-architect to review bounded context proposals"
+"Use the orchestrator to manage discovery-to-domain translation"
+"Have the documentation create domain terminology"
+"Ask the architect to review bounded context proposals"
 
 # Collaborative
-"Have the market-researcher validate business assumptions in domain context"
+"Have the researcher validate business assumptions in domain context"
 ```
 
 ### Domain Phase Usage
 ```bash
 # Standard DDD enforcement
-"Have the platform-architect review this domain model"
-"Ask the documentation-guardian to validate terminology usage"
-"Use the backend-developer to implement this aggregate"
+"Have the architect review this domain model"
+"Ask the documentation to validate terminology usage"
+"Use the backend to implement this aggregate"
+"Have the integrator implement adapters for external systems"
 ```
 
 ---

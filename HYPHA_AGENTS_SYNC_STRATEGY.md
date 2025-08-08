@@ -71,7 +71,7 @@ MOONPOOL_AGENTS="./project-moonpool/.claude/agents/"
 HYPHA_AGENTS="../hypha-agents/agents/prompts/"
 
 # Sync generic agent improvements only
-for agent in platform-architect documentation-guardian security-reviewer; do
+for agent in architect documentation security integrator; do
     echo "Reviewing $agent for generic improvements..."
     # Manual review required - no automatic sync for safety
 done

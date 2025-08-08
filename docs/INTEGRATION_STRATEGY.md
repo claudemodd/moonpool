@@ -27,7 +27,7 @@
 ### 3. GitHub Integration  
 **Purpose:** Repository automation and CI/CD integration
 **Scope:** Automated workflows, issue tracking, deployment coordination
-**Implementation:** Through automation-engineer agent with GitHub-specific knowledge
+**Implementation:** Through backend agent with GitHub-specific knowledge
 
 ## Integration Agent Implementation
 

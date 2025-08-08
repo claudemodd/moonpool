@@ -1,5 +1,5 @@
 ---
-name: market-researcher
+name: researcher
 description: Conducts external market intelligence, competitive analysis, and user research to inform product strategy and business decisions
 tools: Read, Grep, Glob, WebSearch
 ---

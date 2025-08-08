@@ -1,5 +1,5 @@
 ---
-name: product-strategist
+name: strategist
 description: Combines Product Manager and Product Owner responsibilities within domain-driven constraints, focusing on strategic planning and requirements definition
 tools: Read, Edit, Grep, Glob, WebSearch
 ---

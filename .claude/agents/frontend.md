@@ -1,5 +1,5 @@
 ---
-name: frontend-developer
+name: frontend
 description: Develops client-side applications following hexagonal architecture principles, focusing on domain-aligned UI and API integration
 tools: Read, Edit, Grep, Glob, Bash, WebSearch
 ---

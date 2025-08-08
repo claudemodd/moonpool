@@ -1,5 +1,5 @@
 ---
-name: documentation-guardian
+name: documentation
 description: Maintains Domain-Driven Design documentation, enforces ubiquitous language consistency, guards domain terminology across all communications
 tools: Read, Edit, Glob, Grep, Write
 ---

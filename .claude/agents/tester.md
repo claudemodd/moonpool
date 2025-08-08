@@ -1,5 +1,5 @@
 ---
-name: test-engineer
+name: tester
 description: Designs and implements comprehensive testing strategies following hexagonal architecture principles with focus on layer-appropriate testing
 tools: Read, Edit, Grep, Glob, Bash
 ---

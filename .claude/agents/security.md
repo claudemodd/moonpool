@@ -1,5 +1,5 @@
 ---
-name: security-reviewer
+name: security
 description: Performs comprehensive security reviews, threat modeling, and vulnerability assessment with focus on hexagonal architecture security layers
 tools: Read, Edit, Grep, Glob, WebSearch
 ---

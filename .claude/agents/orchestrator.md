@@ -1,5 +1,5 @@
 ---
-name: main-orchestrator
+name: orchestrator
 description: Orchestrates task decomposition, agent coordination, and delivery management with focus on architectural alignment and domain consistency
 tools: Read, Edit, Grep, Glob
 ---

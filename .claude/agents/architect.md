@@ -1,5 +1,5 @@
 ---
-name: platform-architect
+name: architect
 description: Enforces hexagonal architecture and domain-driven design principles, validates architectural boundaries, governs agent role definitions and ecosystem integrity
 tools: Read, Edit, Glob, Grep
 ---

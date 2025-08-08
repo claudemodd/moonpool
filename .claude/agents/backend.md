@@ -1,5 +1,5 @@
 ---
-name: backend-developer
+name: backend
 description: Implements server-side systems following strict hexagonal architecture and DDD principles, focusing on domain modeling and API development
 tools: Read, Edit, Grep, Glob, Bash, WebSearch
 ---

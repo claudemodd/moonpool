@@ -34,12 +34,12 @@
 ### Example Output
 
 ```
-Checking: platform-architect.md
+Checking: architect.md
   → Generic content detected
   → Content differs, manual review required:
-    Run: diff "./project-moonpool/.claude/agents/platform-architect.md" "../hypha-agents/agents/prompts/platform_architect.md"
+    Run: diff "./project-moonpool/.claude/agents/architect.md" "../hypha-agents/agents/prompts/platform_architect.md"
 
-Checking: documentation-guardian.md  
+Checking: documentation.md  
   → Contains project-specific content, manual review required
 ```
 
