@@ -104,10 +104,11 @@ Validated concepts enter domain modeling when:
 ## Agent System Integration
 
 This validation phase uses Claude Code subagents from `.claude/agents/`:
-- Multi-agent coordination through orchestrator
-- Specialized review by architect, security, etc.
-- Discovery-to-domain translation by documentation
-- Quality gates enforced per agent specialization
+- **architect**: System design validation and architectural decisions
+- **reviewer**: Code quality and architectural compliance review
+- **tester**: Validation of testing strategies and coverage
+- **documentation-maintainer**: Discovery-to-domain translation documentation
+- **quality-assurance**: Multi-agent coordination and quality gates
 
 ---
 

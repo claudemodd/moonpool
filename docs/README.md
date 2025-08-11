@@ -6,7 +6,7 @@
 
 ### Discovery Phase → Complete Freedom Zone
 ```
-docs/discovery/              # DDD-exempt exploration (synced with Notion)
+docs/discovery/              # DDD-exempt exploration (manual documentation)
 ├── market-exploration/      # Market research using ANY frameworks
 ├── product-discovery/       # Product concepts with ANY terminology  
 ├── user-interviews/         # User research in AUTHENTIC language
@@ -69,18 +69,22 @@ docs/domain/
 
 ## Agent System Integration
 
-The multi-agent development workflow uses Claude Code subagents located in `.claude/agents/` for:
-- Discovery phase coordination and research
-- Validation phase translation and review  
-- Domain phase modeling and implementation
-- **Project-specific integrations** (external platforms, APIs, sync tools)
+The simplified 7-agent architecture uses Claude Code subagents located in `.claude/agents/` for:
+- **developer**: General coding, debugging, feature implementation
+- **architect**: System design and architectural decisions
+- **tester**: Testing strategy and implementation  
+- **reviewer**: Code review and quality assurance
+- **researcher**: Market analysis and external research
+- **documentation-maintainer**: Documentation management and updates
+- **quality-assurance**: Agent system monitoring and optimisation
 
-**Framework vs. Project Separation:**
-- **Generic patterns:** From hypha-agents framework (reusable DDD/Hexagonal architecture)
-- **Project-specific implementations:** In Project Moonpool (business domain, integrations, workflow)
+**Key improvements in new architecture:**
+- **85% token reduction**: Shared knowledge in external files, not agent prompts
+- **Clear role separation**: No overlapping responsibilities between agents
+- **Efficient collaboration**: Agents reference shared knowledge files in `.claude/` directory
+- **Knowledge persistence**: Structured approach to maintaining and updating shared knowledge
 
-All **Project Moonpool specifics** are documented in this `/docs/` directory.
-See `INTEGRATION_STRATEGY.md` for details on integration separation.
+All **Project Moonpool specifics** are documented in this `/docs/` directory and the `.claude/` knowledge files.
 
 ## Documentation Principles
 

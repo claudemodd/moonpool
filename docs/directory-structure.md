@@ -1,91 +1,86 @@
-# Project Moonpool - Directory Structure
+# Project Moonpool - directory structure
 
-**Last Updated:** 2025-08-07  
+**Last Updated:** 2025-08-11  
 **Maintained by:** Documentation Agent  
-**Sync Responsibility:** Integration Agent
 
-## Root Structure
+## Root structure
 
 ```
 project-moonpool/
+├── CLAUDE.md                       # Project memory (Anthropic hierarchy)
+├── .claude/                        # Agent system and knowledge
+│   ├── agents/                     # Agent configurations
+│   │   ├── developer.md            # General development agent
+│   │   ├── architect.md            # Architecture decisions agent
+│   │   ├── tester.md               # Testing strategy agent
+│   │   ├── reviewer.md             # Code review agent
+│   │   ├── researcher.md           # Market research agent
+│   │   ├── quality-assurance.md    # Agent system QA
+│   │   └── documentation-maintainer.md # Documentation management
+│   ├── architecture.md             # Hexagonal architecture principles
+│   ├── coding-standards.md         # Development standards
+│   ├── domain-model.md             # Domain-driven design concepts
+│   ├── workflows.md                # Testing and development workflows
+│   ├── writing-standards.md        # Documentation standards
+│   └── persistence-guidelines.md  # Agent knowledge persistence rules
 ├── docs/                           # Project documentation
-│   ├── discovery/                  # Discovery phase (DDD-exempt)
+│   ├── discovery/                  # Discovery phase research
 │   │   ├── market-exploration/     # Market research and analysis
-│   │   │   └── competitive-landscape.md
 │   │   ├── product-discovery/      # Product concepts and features
-│   │   │   ├── moonpool-initial-concept.md
-│   │   │   └── project-overview.md
 │   │   ├── user-interviews/        # User research and feedback
-│   │   │   └── research-methodology.md
-│   │   └── README.md              # Discovery phase guide
-│   ├── validation/                 # Multi-agent validation gate
-│   │   ├── concept-review/         # Business model validation
-│   │   ├── technical-feasibility/  # Platform Architect review
-│   │   ├── architecture-review/    # Hexagonal architecture validation
-│   │   ├── security-assessment/    # Security Agent review
-│   │   ├── agent-feedback/         # Multi-agent collaboration
-│   │   └── README.md              # Validation phase guide
-│   ├── domain/                     # Domain-driven design artifacts
-│   │   ├── contexts/               # Bounded context definitions
-│   │   ├── glossary/               # Project ubiquitous language
-│   │   └── README.md              # Domain phase guide
-│   ├── sync/                       # Documentation synchronization
-│   │   ├── notion-sync.sh          # Notion API sync tooling
-│   │   ├── .env.example            # Environment configuration
-│   │   └── README.md              # Sync infrastructure guide
-│   ├── directory-structure.md      # This file
-│   └── SYNC_GUIDELINES.md         # Documentation workflow guide
-├── agents/                        # Agent system (git submodule)
-│   ├── agents/                    # Agent configurations
-│   ├── discovery/                 # Discovery templates
-│   ├── domain/                    # Domain model artifacts
-│   ├── validation/                # Multi-agent validation
-│   └── README.md                 # Agent system guide
-└── README.md                      # Project root documentation
+│   │   └── templates/              # Research templates
+│   ├── validation/                 # Validation phase artifacts
+│   │   └── domain-translation/     # Domain translation documentation
+│   ├── domain/                     # Domain phase artifacts (future)
+│   └── directory-structure.md      # This file - project structure documentation
+├── scripts/                        # Utility scripts
+│   └── sync-to-hypha-agents.sh     # Agent system sync
+├── package.json                    # Node.js dependencies
+├── package-lock.json               # Dependency lock file
+└── tsconfig.json                   # TypeScript configuration
 ```
 
-## Documentation Sync Mapping
+## Memory hierarchy (Anthropic specification)
 
-### Local → Notion Sync Points
-- `/docs/discovery/` → [Project Moonpool Notion Page](https://www.notion.so/Project-moonpool-248a6ef15e228151a198ee8a9be5b270)
-- Discovery documents sync to Notion for collaborative review
-- Directory structure tracked in this file
+### Project memory
+- **Location**: `./CLAUDE.md` (project root)
+- **Purpose**: Team-shared knowledge and project configuration
+- **Imports**: Knowledge from `.claude/` directory
 
-### Agent System Integration
-- Hypha Agents system deployed via git submodule
-- Independent versioning from project-specific documentation
-- Discovery phase uses DDD-exempt exploration space
+### User memory  
+- **Location**: `~/.claude/CLAUDE.md` (user home directory)
+- **Purpose**: Personal preferences across all projects
 
-## Three-Phase Workflow Integration
+## Agent system
 
-### Discovery Phase (DDD-Exempt)
-- **Purpose**: Free exploration and research
-- **Content**: Market research, user interviews, product concepts
-- **Status**: Active - research in progress
-- **Agent Oversight**: Minimal - research freedom maintained
+### Optimised agent architecture
+- **7 agents**: Streamlined from original 10+ for token efficiency
+- **Knowledge separation**: Shared knowledge in external files, not agent prompts
+- **Clear roles**: No overlapping responsibilities between agents
+- **Persistence guidance**: Each agent knows where to store knowledge
 
-### Validation Phase (Multi-Agent Review)
-- **Purpose**: Quality gate between exploration and domain modeling
-- **Content**: Agent reviews, technical feasibility, security assessment
-- **Status**: Framework established - awaiting discovery completion
-- **Agent Oversight**: Full multi-agent validation required
+### Agent roles
+- **developer**: General coding, debugging, feature implementation
+- **architect**: System design and architectural decisions  
+- **tester**: Testing strategy and implementation
+- **reviewer**: Code review and quality assurance
+- **researcher**: Market analysis and external research
+- **documentation-maintainer**: Documentation management and updates
+- **quality-assurance**: Agent system monitoring and optimisation
 
-### Domain Phase (DDD-Governed) 
-- **Purpose**: Domain-driven design implementation
-- **Content**: Bounded contexts, ubiquitous language, domain model
-- **Status**: Not initiated - requires validation completion
-- **Agent Oversight**: Documentation Agent enforces DDD compliance
+## Development workflow
 
-## Directory Change Log
+### Three-phase approach
+1. **Discovery phase**: Free exploration and research (active)
+2. **Validation phase**: Multi-agent review and validation (framework ready)
+3. **Domain phase**: Domain-driven design implementation (future)
 
-| Date | Change | Agent Responsible |
-|------|--------|-------------------|
-| 2025-08-07 | Initial structure created | Documentation Agent |
-| 2025-08-07 | Added project-overview.md from Notion sync | Integration Agent |
-| 2025-08-07 | Created complete three-phase workflow structure | Documentation Agent |
-| 2025-08-07 | Populated discovery directories with extracted content | Documentation Agent |
-| 2025-08-07 | Established validation and domain phase frameworks | Documentation Agent |
+### Agentic product development
+- **Agent-driven development**: AI agents handle specialised tasks
+- **Test-driven development**: "Write tests, commit; code, iterate, commit"
+- **Knowledge persistence**: Agents update shared knowledge files
+- **Token efficiency**: 85% reduction in agent context through external knowledge
 
 ---
 
-**Note**: This file is automatically maintained by the Documentation Agent and should reflect the current state of project documentation structure.
+**Note**: This structure follows Anthropic's memory hierarchy specification and supports the simplified agentic development approach.

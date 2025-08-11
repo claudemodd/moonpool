@@ -1,0 +1,29 @@
+{
+  "name": "project-moonpool",
+  "version": "0.1.0",
+  "description": "Project Moonpool - Hexagonal Architecture for Open Finance Platform",
+  "type": "module",
+  "main": "src/integration-test-runner.js",
+  "scripts": {
+    "test:integration": "node --loader ts-node/esm src/integration-test-runner.ts",
+    "test:integration:js": "node src/integration-test-runner.js",
+    "demo:context-injection": "node --loader ts-node/esm src/demo-context-injection-system.ts",
+    "demo:context-injection:js": "node src/demo-context-injection-system.js",
+    "demo:xml-coordination": "node --loader ts-node/esm src/demo-xml-coordination-system.ts",
+    "demo:xml-coordination:js": "node src/demo-xml-coordination-system.js",
+    "compile": "tsc",
+    "dev": "ts-node --esm src/integration-test-runner.ts"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "undici": "^5.28.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

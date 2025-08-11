@@ -48,11 +48,11 @@ Project-specific domain glossary
 ## Agent System Integration
 
 Domain development coordinated through Claude Code subagents:
-- documentation enforces ubiquitous language
-- architect defines hexagonal architecture
-- security validates privacy boundaries
-- backend implements domain logic
-- integrator implements adapters and external integrations
+- **documentation-maintainer**: Enforces ubiquitous language and maintains domain documentation
+- **architect**: Defines hexagonal architecture and system boundaries
+- **developer**: Implements domain logic following architectural principles
+- **reviewer**: Validates privacy boundaries and security implementation
+- **tester**: Implements comprehensive testing across all architectural layers
 
 ## Current Status
 

@@ -72,23 +72,18 @@ for moonpool_agent in "$MOONPOOL_AGENTS"/*.md; do
     agent_name=$(basename "$moonpool_agent")
     echo "Checking: $agent_name"
     
-    # Map Moonpool agent names to hypha-agents names
+    # Map Moonpool agent names to hypha-agents names (7-agent architecture)
     hypha_name=""
     case "$agent_name" in
-        "architect.md") hypha_name="platform_architect.md" ;;
-        "documentation.md") hypha_name="documentation_agent.md" ;;
-        "security.md") hypha_name="security_agent.md" ;;
-        "researcher.md") hypha_name="market_researcher.md" ;;
-        "strategist.md") hypha_name="product_strategy_agent.md" ;;
-        "code-reviewer.md") hypha_name="code_reviewer.md" ;;
-        "backend.md") hypha_name="backend_developer.md" ;;
-        "frontend.md") hypha_name="frontend_developer.md" ;;
-        "orchestrator.md") hypha_name="main_orchestrator.md" ;;
-        "designer.md") hypha_name="product_design_agent.md" ;;
-        "tester.md") hypha_name="tester.md" ;;
-        "integrator.md") hypha_name="integration_agent.md" ;;
+        "developer.md") hypha_name="backend-developer.md" ;;
+        "architect.md") hypha_name="platform-architect.md" ;;
+        "tester.md") hypha_name="test-engineer.md" ;;
+        "reviewer.md") hypha_name="code-reviewer.md" ;;
+        "researcher.md") hypha_name="market-researcher.md" ;;
+        "documentation-maintainer.md") hypha_name="documentation-guardian.md" ;;
+        "quality-assurance.md") hypha_name="quality-assurance.md" ;;
         *) 
-            echo "  → Unknown agent, skipping"
+            echo "  → Agent not mapped to hypha-agents framework, skipping"
             continue
             ;;
     esac
@@ -142,5 +137,6 @@ if [ $agent_updates -gt 0 ]; then
 fi
 
 echo
-echo -e "${GREEN}For detailed sync strategy, see:${NC}"
-echo "  $MOONPOOL_ROOT/HYPHA_AGENTS_SYNC_STRATEGY.md"
+echo -e "${GREEN}Project uses simplified 7-agent architecture:${NC}"
+echo "  developer, architect, tester, reviewer, researcher,"
+echo "  documentation-maintainer, quality-assurance"

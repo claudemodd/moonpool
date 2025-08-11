@@ -2,7 +2,26 @@
   "permissions": {
     "allow": [
       "Bash(mv:*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(git commit:*)",
+      "Bash(./scripts/sync-to-hypha-agents.sh:*)",
+      "Bash(git -C ../hypha-agents status)",
+      "Bash(git -C ../hypha-agents add .claude/agents/integration-agent.md)",
+      "Bash(cp:*)",
+      "Bash(git -C ../hypha-agents restore --staged .claude/agents/integration-agent.md)",
+      "Bash(git -C ../hypha-agents add .claude/agents/)",
+      "Bash(git -C ../hypha-agents commit -m \"Update agent system: Rename agents and consolidate roles\n\n- Rename agents to shorter, clearer names (platform-architect → architect, etc.)\n- Add new integrator agent for adapter pattern implementation\n- Remove automation-engineer agent (functionality consolidated)\n- Update agent descriptions and architectural focus\n- Maintain hexagonal architecture and DDD principles\")",
+      "Bash(git push:*)",
+      "Bash(git -C ../hypha-agents push origin main)",
+      "Bash(find:*)",
+      "Bash(ADAPTER_AUTO_INIT=false source adapters/adapter-registry.sh)",
+      "Bash(export ADAPTER_AUTO_INIT=false)",
+      "Bash(source:*)",
+      "Bash(touch:*)",
+      "Bash(mkdir:*)",
+      "Bash(sed:*)",
+      "Bash(npm run compile:*)",
+      "Bash(npm run demo:xml-coordination:js:*)"
     ],
     "deny": []
   }
