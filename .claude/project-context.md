@@ -31,11 +31,7 @@
 - **Security-first development** with input validation and secret management
 
 ## Reference architecture
-```
-/domain - Pure business logic (financial concepts, aggregates)
-/application - Use cases and orchestration
-/infrastructure - External integrations (banks, energy markets, AI services)
-```
+See `@.claude/architecture.md` for complete architectural principles and patterns.
 
 ## Key commands
 - `npm run compile` - TypeScript compilation

@@ -3,11 +3,11 @@
 ## "Write tests, commit; code, iterate, commit" workflow
 
 ### Testing-first development process
-1. **Write tests first** - Define expected behavior before implementation
+1. **Write tests first** - Define expected behaviour
 2. **Commit tests** - Commit failing tests with clear intent
-3. **Implement code** - Make tests pass with minimal viable implementation  
-4. **Iterate and refine** - Improve implementation while keeping tests green
-5. **Commit working code** - Commit once implementation is complete
+3. **Implement code** - Make tests pass with minimal viable solution  
+4. **Iterate and refine** - Improve while keeping tests green
+5. **Commit working code** - Commit complete implementation
 
 ### Commit message format
 ```
@@ -27,10 +27,10 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 
 ### Quality assurance process
 - Test-first development for domain logic
-- Behavior-driven development aligned with business scenarios
-- Continuous testing integrated with CI/CD pipeline
-- Test maintenance aligned with architectural evolution
-- Quality metrics tracking per architectural layer
+- Behaviour-driven development aligned with business scenarios
+- Continuous testing with CI/CD integration
+- Test maintenance with architectural evolution
+- Quality metrics per architectural layer
 
 ### Git workflow standards
 - Run git status and git diff before committing
@@ -44,12 +44,12 @@ Co-Authored-By: Claude <noreply@anthropic.com>
 - Load testing at adapter boundaries
 - Stress testing for domain logic under high volume  
 - Performance regression testing for architectural changes
-- Resource utilization monitoring per architectural layer
-- Scalability testing aligned with business growth projections
+- Resource utilisation monitoring per layer
+- Scalability testing aligned with growth projections
 
 ### Integration testing requirements
-- All adapters must have comprehensive integration tests
-- Mock external dependencies for unit testing domain logic
-- Implement circuit breakers and retry patterns
-- Handle failure scenarios gracefully
-- Log integration events for debugging and monitoring
+- Comprehensive integration tests for all adapters
+- Mock external dependencies for domain unit tests
+- Circuit breakers and retry patterns
+- Graceful failure scenario handling
+- Integration event logging for debugging

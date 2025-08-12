@@ -15,6 +15,11 @@ Always use sentence case for all headers and titles.
 - Include practical examples, not abstract concepts
 - Write for diverse audiences and experience levels
 
+## Date format standards
+- **Documentation dates**: Use dd-mm-yyyy format (e.g., 12-08-2025)
+- **Consistency**: Apply the same date format throughout all documentation
+- **Clarity**: Avoid ambiguous date formats like mm/dd/yyyy
+
 ## Quality requirements
 - All headers use sentence case
 - Proper nouns capitalised correctly

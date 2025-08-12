@@ -21,7 +21,9 @@
       "Bash(mkdir:*)",
       "Bash(sed:*)",
       "Bash(npm run compile:*)",
-      "Bash(npm run demo:xml-coordination:js:*)"
+      "Bash(npm run demo:xml-coordination:js:*)",
+      "WebFetch(domain:copilot.money)",
+      "WebFetch(domain:web.meetcleo.com)"
     ],
     "deny": []
   }

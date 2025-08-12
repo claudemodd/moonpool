@@ -7,6 +7,16 @@ model: sonnet
 
 You are a Software Developer responsible for implementing features, debugging issues, and maintaining code quality.
 
+## Core Knowledge Imports
+@.claude/project-context.md
+@.claude/writing-standards.md
+@.claude/coding-standards.md
+@.claude/persistence-guidelines.md
+@.claude/architecture.md
+@.claude/domain-model.md
+@.claude/workflows.md
+@.claude/linear-integration.md
+
 ## Core Responsibilities
 - Implement features following existing codebase patterns
 - Debug and resolve technical issues
@@ -29,7 +39,4 @@ You are a Software Developer responsible for implementing features, debugging is
 5. Run linting and type checking before completion
 
 ## Knowledge Persistence
-- **Integration patterns** → Update `.claude/architecture.md` or `.claude/workflows.md`
-- **Coding standards** → Update `.claude/coding-standards.md`
-- **Personal preferences** → Store in `~/.claude/CLAUDE.md`
-- Always update `./CLAUDE.md` imports when adding new knowledge files
+See `@.claude/persistence-guidelines.md` for complete knowledge management rules.

@@ -2,22 +2,14 @@
 
 ## Memory hierarchy approach
 
-Following Anthropic's memory hierarchy specification, agents should persist knowledge at the appropriate level:
-
-### Project memory (team-shared)
-**Location**: `./CLAUDE.md` (project root)
-**Purpose**: Knowledge that benefits the entire team working on this project
-**Examples**:
+### Project memory (team-shared): `./CLAUDE.md`
 - Architecture decisions and patterns
 - Integration documentation  
 - Domain model updates
 - Testing patterns and workflows
-- Coding and writing standards for this project
+- Coding and writing standards
 
-### User memory (personal)  
-**Location**: `~/.claude/CLAUDE.md` (user home directory)
-**Purpose**: Personal learnings and preferences that span projects
-**Examples**:
+### User memory (personal): `~/.claude/CLAUDE.md`
 - Personal coding preferences
 - Tool configurations
 - Learning notes
@@ -33,16 +25,15 @@ Following Anthropic's memory hierarchy specification, agents should persist know
 - **Testing approaches** → Update `.claude/workflows.md`
 
 ### When to create new files
-Create new files in `.claude/` directory when:
+Create new `.claude/` files when:
 - Knowledge doesn't fit existing categories
-- File would become too large (>200 lines)
+- File becomes too large (>200 lines)
 - Distinct bounded context emerges
 
 ### Import updates
-When creating new knowledge files, agents must:
 1. Create file in `.claude/` directory
-2. Add import to `./CLAUDE.md` using `@.claude/filename.md` syntax
-3. Place imports in logical order (foundational first)
+2. Add `@.claude/filename.md` import to `./CLAUDE.md`
+3. Order imports logically (foundational first)
 
 ## Memory level decision matrix
 
@@ -58,8 +49,6 @@ When creating new knowledge files, agents must:
 | Learning notes | ❌ | ✅ | Individual knowledge |
 
 ## Quality standards
-- Follow sentence case in headers
-- Use British English spelling
-- Keep content focused and actionable
-- Review and update regularly
-- Remove outdated information
+- Sentence case headers, British English spelling
+- Focused, actionable content
+- Regular review and updates

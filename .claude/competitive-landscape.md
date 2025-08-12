@@ -123,4 +123,4 @@ This document consolidates competitive intelligence from market research to info
 - Evaluate regulatory changes impact on competitive landscape
 
 ## Last updated
-December 2024 - Based on emerging PFM competitors analysis 2024
+12-08-2025 - Based on emerging PFM competitors analysis from 2024 data
