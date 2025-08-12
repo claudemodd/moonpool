@@ -8,6 +8,10 @@
 @.claude/architecture.md
 @.claude/domain-model.md  
 @.claude/workflows.md
+@.claude/linear-integration.md
+@.claude/competitive-landscape.md
+@.claude/market-insights.md
+@.claude/research-methodology.md
 
 ## Project mission
 Project Moonpool demonstrates clean, efficient AI agent collaboration for open finance platform development. We use a simplified agent architecture following Anthropic's best practices for minimal complexity and maximum effectiveness.
@@ -37,6 +41,11 @@ Project Moonpool demonstrates clean, efficient AI agent collaboration for open f
 ## Key commands
 - `npm run compile` - Compile TypeScript
 - `scripts/sync-to-hypha-agents.sh` - Sync agent configurations
+
+## Project management integration
+- **Linear MCP**: Integrated for issue tracking and project management
+- All agents have access to Linear for creating issues, tracking progress, and managing development tasks
+- Use natural language commands like "Create a Linear issue for..." or "Show me high-priority issues"
 
 ## Deployment instructions
 - **NO CLAUDE ATTRIBUTION**: Never include Claude attribution in commit messages

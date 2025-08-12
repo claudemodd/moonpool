@@ -149,8 +149,143 @@ Before publishing any research report, verify:
 - **Always disclose when sources have potential conflicts of interest**
 - **Always include publication dates to assess currency of information**
 
-## Knowledge Persistence
-- **Research findings** → Create new file in `.claude/` directory or update existing
-- **Market insights** → Update appropriate domain file in `.claude/` directory  
-- **Personal research methods** → Store in `~/.claude/CLAUDE.md`
-- Always update `./CLAUDE.md` imports when adding new knowledge files
+## Research Artifact Persistence
+
+### CRITICAL: Always Save Research Reports
+When asked to create any research report, analysis, or market study, you MUST:
+
+1. **Save the complete report** to the research directory using proper file naming
+2. **Preserve all source documentation** with working URLs in the saved file
+3. **Create persistent artifacts** that can be referenced by the team later
+
+### Research Directory Structure
+```
+docs/discovery/market-exploration/research/
+├── competitive-analysis-[topic]-[YYYY].md
+├── market-scan-[domain]-[YYYY].md
+├── technology-review-[topic]-[YYYY].md
+├── industry-trends-[sector]-[YYYY].md
+└── regulatory-scan-[jurisdiction]-[YYYY].md
+```
+
+### File Naming Convention
+- **Format**: `[research-type]-[topic]-[YYYY].md`
+- **Examples**: 
+  - `competitive-analysis-pfm-platforms-2025.md`
+  - `market-scan-open-banking-australia-2025.md`
+  - `technology-review-ai-agents-2025.md`
+- **Use lowercase with hyphens** for file names
+- **Include year** to track research currency
+
+### Mandatory Research Artifact Workflow
+1. **Conduct research** using source verification requirements above
+2. **Write complete report** with all mandatory sections
+3. **Save report** to `docs/discovery/market-exploration/research/` using proper naming
+4. **Verify file saved** by checking the research directory
+5. **Never deliver research** without creating persistent artifact
+
+### Research Report Template Structure
+Every research report MUST include:
+```markdown
+# [Report Title]
+
+## Executive Summary
+[Key findings and implications]
+
+## Research Methodology
+[Search approach, keywords used, source selection criteria]
+
+## Analysis
+[Detailed findings with inline citations]
+
+## Recommendations
+[Actionable insights based on findings]
+
+## Sources
+[Complete bibliography with working URLs]
+
+## Research Metadata
+- **Research Date**: [YYYY-MM-DD]
+- **Researcher**: [Agent name]
+- **Keywords Used**: [List of search terms]
+- **Sources Validated**: [Date of URL verification]
+```
+
+### Quality Assurance for Artifact Persistence
+Before completing any research task, verify:
+- [ ] Research report saved to correct directory
+- [ ] File name follows naming convention
+- [ ] Complete source documentation included
+- [ ] All URLs tested and working
+- [ ] Report contains all mandatory sections
+- [ ] File can be accessed by team members
+
+## Knowledge Persistence and Post-Research Actions
+
+### MANDATORY: Post-Research Workflow
+After completing ANY research task, you MUST execute ALL of the following steps:
+
+#### 1. Knowledge Extraction and Persistence
+**Market intelligence**:
+- [ ] Extract competitive insights → Update `.claude/competitive-landscape.md`
+- [ ] Extract market trends → Update `.claude/market-insights.md`
+- [ ] Document methodology improvements → Update `.claude/research-methodology.md`
+
+**Technical findings**:
+- [ ] Architecture implications → Update `.claude/architecture.md`
+- [ ] Domain model insights → Update `.claude/domain-model.md`
+- [ ] Integration requirements → Update appropriate `.claude/` files
+
+**Strategic implications**:
+- [ ] Update project strategy insights in `./CLAUDE.md` if findings affect mission or approach
+- [ ] Add new knowledge file imports to `./CLAUDE.md` if created
+
+#### 2. Git Verification and Quality Gates
+**Pre-commit verification**:
+- [ ] Run `git status` to verify all research artifacts are tracked
+- [ ] Run `git diff` to review all changes before committing
+- [ ] Ensure all URLs in research reports tested and accessible
+- [ ] Verify knowledge files properly updated with new insights
+
+**Quality assurance checklist**:
+- [ ] All research reports include complete Sources section with working URLs
+- [ ] Minimum 3-5 sources per key finding documented
+- [ ] Inline citations provided for all statistical claims
+- [ ] Research methodology documented in report
+- [ ] Knowledge extraction completed to appropriate `.claude/` files
+- [ ] Team accessibility verified for all created artifacts
+
+#### 3. Mandatory Research Action Sequence
+Execute in this exact order:
+1. **Complete research** using source verification requirements
+2. **Save research artifact** to `docs/discovery/market-exploration/research/`
+3. **Extract insights** to appropriate `.claude/` knowledge files
+4. **Verify git tracking** of all created/modified files
+5. **Test URL accessibility** in all research outputs
+6. **Document completion** of post-research checklist
+
+### Knowledge File Mapping
+**Research findings persistence**:
+- **Competitive intelligence** → `.claude/competitive-landscape.md`
+- **Market trends and insights** → `.claude/market-insights.md`
+- **Technical architecture findings** → `.claude/architecture.md`
+- **Domain model implications** → `.claude/domain-model.md`
+- **Research methodology improvements** → `.claude/research-methodology.md`
+- **Personal research preferences** → `~/.claude/CLAUDE.md`
+
+### Quality Gates and Failure Conditions
+**NEVER complete a research task without**:
+- Saved research artifact in proper directory with complete source documentation
+- Knowledge extraction to appropriate `.claude/` files completed
+- Git status verification showing all artifacts tracked
+- URL accessibility testing completed and documented
+
+**Failure to complete post-research actions is considered task failure**
+
+### Knowledge Accessibility Requirements
+All extracted knowledge must be:
+- Accessible to other agents through memory hierarchy
+- Formatted following sentence case and British English standards
+- Actionable and directly applicable to Project Moonpool development
+- Cross-referenced with existing knowledge where relevant
+- Updated with recency dates for currency tracking
